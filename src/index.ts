@@ -25,9 +25,6 @@ const start = () => {
     .catch((err) => {
       console.error("Error creating users table:", err);
     })
-    .finally(() => {
-      pool.end();
-    });
 };
 
 app.listen(port, () => {
